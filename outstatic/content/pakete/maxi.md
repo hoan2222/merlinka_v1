@@ -8,7 +8,7 @@ slug: 'maxi'
 description: ''
 coverImage: '/PlaceHolder_slim.png'
 preis: '280€'
-publishedAt: '2024-05-09T15:59:27.274Z'
+publishedAt: '2024-05-07T15:59:27.000Z'
 ---
 
 1,5-2 Stunden Shooting
