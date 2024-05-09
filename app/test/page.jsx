@@ -5,8 +5,10 @@ import { getDocuments } from 'outstatic/server'
 export default async function PreisListe() {
     const posts = await getData();
     return posts.map((post) => {
+        return (
+            <h1>{post.content}</h1>
+        )
 
-        <h1>{post.content}</h1>
     }
     )
 }
