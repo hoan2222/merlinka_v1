@@ -1,31 +1,4 @@
-
-
-
-
-import Preis from "../ui/preis/preis"
 import Preise from "../../test/page"
-
-
-const content = [
-    {
-        "title": "Mini",
-        "preis": "180€",
-        "image": "/PlaceHolder_slim.png",
-        "list": ["30 Minuten Shooting", "15 bearbeitete Fotos", "Onlinegalerie", "1 Foto als Print"]
-    },
-    {
-        "title": "Midi",
-        "preis": "220€",
-        "image": "/PlaceHolder_slim.png",
-        "list": ["1 Stunde Shooting", "45 bearbeitete Fotos", "Onlinegalerie", "2 Foto als Print"]
-    },
-    {
-        "title": "Maxi",
-        "preis": "280€",
-        "image": "/PlaceHolder_slim.png",
-        "list": ["1,5-2 Stunden Shooting", "80 bearbeitete Fotos", "Onlinegalerie", "3 Foto als Print"]
-    }
-]
 
 
 
