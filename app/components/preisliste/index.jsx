@@ -1,6 +1,9 @@
 'use client'
 
+
+
 import Preis from "../ui/preis/preis"
+
 
 const content = [
     {
