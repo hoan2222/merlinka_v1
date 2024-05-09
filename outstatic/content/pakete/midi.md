@@ -11,4 +11,10 @@ preis: ''
 publishedAt: '2024-05-09T15:57:50.813Z'
 ---
 
-jasdla
+1 Stunde Shooting
+
+45 bearbeitete Fotos
+
+Onlinegalerie
+
+2 Foto als Print"
