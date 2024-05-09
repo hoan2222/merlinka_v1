@@ -1,0 +1,13 @@
+{
+  "title": "pakete",
+  "type": "object",
+  "properties": {
+    "preis": {
+      "required": false,
+      "description": "Preis in Euro",
+      "fieldType": "String",
+      "dataType": "string",
+      "title": "Preis"
+    }
+  }
+}
