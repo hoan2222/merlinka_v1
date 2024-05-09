@@ -1,6 +1,6 @@
 ---
 title: 'Maxi'
-status: 'draft'
+status: 'published'
 author:
   name: ''
   picture: 'https://avatars.githubusercontent.com/u/141321671?v=4'
