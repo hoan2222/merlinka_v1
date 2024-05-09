@@ -4,7 +4,7 @@ import Preis from '../components/ui/preis/preis';
 
 
 
-export default async function PreisListe() {
+export default async function Preise() {
     const posts = await getData();
     return posts.map((post) => {
         const content = post.content.trim().split("\n\n");
