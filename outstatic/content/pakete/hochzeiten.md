@@ -13,10 +13,8 @@ publishedAt: '2024-05-05T18:28:31.000Z'
 
 Dokumentarische Begleitung und
 
-Brautpaar Shooting
+Brautpaar Bliblablub
 
 Individuelle Standesamtliche Begleitung
 
 Feiern: 4-8 Stunden Pakete
-
-   
