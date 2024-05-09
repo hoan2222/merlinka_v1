@@ -10,13 +10,14 @@ export default function Impressum() {
             <h1 className="text-5xl font-semibold">Impressum</h1>
             <ul className=" space-y-1">
                 <li>Merle Puntke</li>
-                <li>Merles Straße</li>
+                <li>Kleine Straße 2</li>
                 <li>14482 Potsdam</li>
                 <li>info@merlinkafoto.de</li>
+                { /*
                 <li>Umsatzsteuer-ID:
                     Umsatzsteuer-Identifikationsnummer
                     <br />gemäß § 27 a Umsatzsteuergesetz: DE123456789
-                </li>
+    </li> */}
                 <li className="pt-10">
                     <a href="https://www.instagram.com/merlinka.foto?igsh=ZzE3NTB3Y3VneWZ3">
                         <motion.img src="/Instagram_Glyph_Black.svg" alt="Hier gehts zu Instagram" width={30}

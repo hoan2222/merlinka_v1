@@ -1,4 +1,4 @@
-import Preise from "../../test/page"
+import Preise from "./preise"
 
 
 

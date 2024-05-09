@@ -1,6 +1,6 @@
 import { getDocuments } from 'outstatic/server';
 
-import Preis from '../components/ui/preis/preis';
+import Preis from '../../ui/preis/preis';
 
 
 
