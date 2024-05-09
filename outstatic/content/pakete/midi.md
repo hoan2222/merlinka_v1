@@ -7,7 +7,7 @@ author:
 slug: 'midi'
 description: ''
 coverImage: ''
-preis: ''
+preis: '220€'
 publishedAt: '2024-05-09T15:57:50.813Z'
 ---
 
