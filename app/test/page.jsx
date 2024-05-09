@@ -1,6 +1,5 @@
 import { getDocuments } from 'outstatic/server'
 
-import Preis from '../components/ui/preis/preis';
 
 
 export default async function PreisListe() {
