@@ -8,7 +8,7 @@ slug: 'midi'
 description: ''
 coverImage: '/PlaceHolder_slim.png'
 preis: '220€'
-publishedAt: '2024-05-09T15:57:50.813Z'
+publishedAt: '2024-05-08T15:57:50.000Z'
 ---
 
 1 Stunde Shooting
