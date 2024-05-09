@@ -1,6 +1,6 @@
 ---
 title: 'Hochzeiten'
-status: 'draft'
+status: 'published'
 author:
   name: ''
   picture: 'https://avatars.githubusercontent.com/u/169196306?v=4'
@@ -15,4 +15,4 @@ Dokumentarische Begleitung und Brautpaar Shooting
 
 Individuelle Standesamtliche Begleitung
 
-Feiern: 4-8 Stunden Pakete 
+Feiern: 4-8 Stunden Pakete
