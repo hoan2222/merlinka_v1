@@ -11,4 +11,10 @@ preis: '280€'
 publishedAt: '2024-05-09T15:59:27.274Z'
 ---
 
-adb
+1,5-2 Stunden Shooting
+
+80 bearbeitete Fotos
+
+Onlinegalerie
+
+3 Foto als Print"
