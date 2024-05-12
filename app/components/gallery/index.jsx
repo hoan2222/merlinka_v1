@@ -70,9 +70,9 @@ export default function Gallery() {
     }, [xTranslation, width, duration, rerender])
 
     return (
-        <div className={`relative block overflow-hidden w-full ${'h-[' + size + 'vh]'} pt-20 sm:pt-0`}>
+        <div className='relative block overflow-hidden w-screen h-[600px] sm:h-[500px] pt-20  sm:py-0'>
             <motion.div
-                className='left-0 flex sm:gap-2 absolute'
+                className='left-0 flex gap-2 absolute'
                 ref={ref}
                 style={{ x: xTranslation }}
                 onHoverStart={() => {
@@ -92,9 +92,9 @@ export default function Gallery() {
                     setDuration(FAST_DURATION)
                 }}
             >
-                {datas?.map((item, idx) => (
+                {datas.map((item, idx) => (
                     <div className='h-[300px] w-[300px] sm:h-[500px] sm:w-[500px] flex justify-center' key={idx}>
-                        <img src={item} className='object-scale-down' />
+                        <img src={item} className='object-scale-down' key={idx} />
                     </div>
                 ))}
             </motion.div>
