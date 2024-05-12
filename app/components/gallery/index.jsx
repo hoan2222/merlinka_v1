@@ -1,6 +1,5 @@
 'use client'
 
-import gallery from './gallery-cards/gallery-cards'
 import React, { useEffect, useState } from 'react'
 import { useMeasure } from '@uidotdev/usehooks'
 import { animate, useMotionValue, motion } from 'framer-motion'
@@ -9,7 +8,6 @@ import { animate, useMotionValue, motion } from 'framer-motion'
 
 export default function Gallery() {
 
-    const items = [...gallery, ...gallery];
     const data = [
         "/gallery/IMG_0011.jpg",
         "/gallery/IMG_0079.jpg",
