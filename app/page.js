@@ -3,6 +3,7 @@ import About from "./components/about";
 import Contact from "./components/contact";
 import Preisliste from "./components/preisliste";
 import Impressum from "./components/impressum";
+import TestPage from "./test/page.jsx"
 
 export default function Home() {
 
@@ -14,6 +15,7 @@ export default function Home() {
 
         <Preisliste />
         <Contact />
+        <TestPage />
 
         <Impressum />
       </div>
