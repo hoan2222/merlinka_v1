@@ -6,7 +6,7 @@ author:
   picture: 'https://avatars.githubusercontent.com/u/141321671?v=4'
 slug: 'mini'
 description: ''
-coverImage: '/images/img_2116-Q5Mj.jpg'
+coverImage: '/images/img_2116v1-c1OT.jpg'
 preis: '180€'
 publishedAt: '2024-05-09T14:50:58.922Z'
 ---
