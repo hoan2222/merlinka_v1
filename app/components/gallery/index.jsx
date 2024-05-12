@@ -1,35 +1,17 @@
 'use client'
 
+import gallery from './gallery-cards/gallery-cards'
 import React, { useEffect, useState } from 'react'
 import { useMeasure } from '@uidotdev/usehooks'
 import { animate, useMotionValue, motion } from 'framer-motion'
 
-import GalleryCard from '../ui/card/index';
+
 
 export default function Gallery() {
 
-    const content = [
-        "/PlaceHolder_slim.png",
-        "/PlaceHolder.png",
-        "/PlaceHolder.png",
-        "/PlaceHolder.png",
-        "/PlaceHolder.png",
-        "/PlaceHolder.png",
-        "/PlaceHolder.png",
-        "/PlaceHolder.png",
-        "/PlaceHolder.png",
-        "/PlaceHolder.png",
-        "/PlaceHolder.png",
-        "/PlaceHolder.png",
-        "/PlaceHolder.png",
-        "/PlaceHolder.png",
-        "/PlaceHolder.png",
-        "/PlaceHolder.png",
-        "/PlaceHolder.png",
-        "/PlaceHolder.png",
-        "/PlaceHolder.png",
-        "/PlaceHolder.png"
-    ]
+    const items = [...gallery, ...gallery];
+
+
 
     const FAST_DURATION = 90;
     const SLOW_DURATION = 200;
@@ -47,7 +29,7 @@ export default function Gallery() {
 
     useEffect(() => {
         let controls;
-        let finalPosition = -width / 2 - 8;
+        let finalPosition = -width / 2 - 4;
 
         if (mustFinish) {
             controls = animate(xTranslation, [xTranslation.get(), finalPosition], {
@@ -76,7 +58,7 @@ export default function Gallery() {
     return (
         <div className={`relative block overflow-hidden w-full ${'h-[' + size + 'vh]'}`}>
             <motion.div
-                className='left-0 flex gap-4 absolute'
+                className='left-0 flex gap-2 absolute'
                 ref={ref}
                 style={{ x: xTranslation }}
                 onHoverStart={() => {
@@ -87,11 +69,15 @@ export default function Gallery() {
                     setMustFinnish(true);
                     setDuration(FAST_DURATION)
                 }}
-            >
-                {[...content, ...content].map((item, idx) => (
-                    <GalleryCard image={item} key={idx} size={size} />
-                ))}
-            </motion.div>
+                onTapStart={() => {
+                    setMustFinnish(true);
+                    setDuration(SLOW_DURATION)
+                }}
+                onTapEnd={() => {
+                    setMustFinnish(true);
+                    setDuration(FAST_DURATION)
+                }}
+            >{items}</motion.div>
 
         </div>
 

@@ -10,7 +10,7 @@ export default function Contact() {
     return (
         <div className="flex flex-col sm:flex-row justify-start space-y-6 px-12 sm:space-y-0 sm:space-x-20 pt-48" id="contact">
             <h1 className="sm:hidden text-5xl font-semibold">Contact</h1>
-            <Image src="/about.jpg" width={514} height={514} />
+            <Image src="/IMG_2316v1.jpg" width={514} height={514} />
             <div className="flex flex-col space-y-4 sm:space-y-6 sm:w-[40%]">
                 <h1 className="hidden sm:block text-6xl font-semibold">Contact</h1>
                 <p className=" text-base leading-4 sm:leading-none sm:text-xl sm:pt-24">
