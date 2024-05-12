@@ -6,7 +6,7 @@ author:
   picture: 'https://avatars.githubusercontent.com/u/141321671?v=4'
 slug: 'midi'
 description: ''
-coverImage: '/PlaceHolder_slim.png'
+coverImage: '/images/img_5979v1-U3Mj.jpg'
 preis: '220€'
 publishedAt: '2024-05-08T15:57:50.000Z'
 ---
