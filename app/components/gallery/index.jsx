@@ -10,8 +10,24 @@ import { animate, useMotionValue, motion } from 'framer-motion'
 export default function Gallery() {
 
     const items = [...gallery, ...gallery];
+    const data = [
+        "/gallery/IMG_0011.jpg",
+        "/gallery/IMG_0079.jpg",
+        "/gallery/IMG_0174-2-2.jpg",
+        "/gallery/IMG_0288.jpg",
+        "/gallery/IMG_0321.jpg",
+        "/gallery/IMG_0564.jpg",
+        "/gallery/IMG_2367.jpg",
+        "/gallery/IMG_3605.jpg",
+        "/gallery/IMG_6620.jpg",
+        "/gallery/IMG_6949.jpg",
+        "/gallery/IMG_7566.jpg",
+        "/gallery/IMG_8480.jpg",
+        "/gallery/IMG_8899.jpg",
+        "/gallery/IMG_9940.jpg",
+    ]
 
-
+    const datas = [...data, ...data];
 
     const FAST_DURATION = 90;
     const SLOW_DURATION = 200;
@@ -56,9 +72,9 @@ export default function Gallery() {
     }, [xTranslation, width, duration, rerender])
 
     return (
-        <div className={`relative block overflow-hidden w-full ${'h-[' + size + 'vh]'}`}>
+        <div className={`relative block overflow-hidden w-full ${'h-[' + size + 'vh]'} pt-20 sm:pt-0`}>
             <motion.div
-                className='left-0 flex gap-2 absolute'
+                className='left-0 flex sm:gap-2 absolute'
                 ref={ref}
                 style={{ x: xTranslation }}
                 onHoverStart={() => {
@@ -77,7 +93,13 @@ export default function Gallery() {
                     setMustFinnish(true);
                     setDuration(FAST_DURATION)
                 }}
-            >{items}</motion.div>
+            >
+                {datas?.map((item, idx) => (
+                    <div className='h-[300px] w-[300px] sm:h-[500px] sm:w-[500px] flex justify-center' key={idx}>
+                        <img src={item} className='object-scale-down' />
+                    </div>
+                ))}
+            </motion.div>
 
         </div>
 
