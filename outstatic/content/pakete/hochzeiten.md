@@ -7,7 +7,7 @@ author:
 slug: 'hochzeiten'
 description: ''
 coverImage: '/PlaceHolder_slim.png'
-preis: 'individuell vereinbar'
+preis: 'individuel'
 publishedAt: '2024-05-05T18:28:31.000Z'
 ---
 
