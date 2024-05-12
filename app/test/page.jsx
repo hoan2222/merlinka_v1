@@ -12,7 +12,7 @@ export default async function TestPage() {
             <h1 className="sm:hidden text-5xl font-semibold">Meinungen</h1>
             <img src="/PlaceHolder_slim.png" alt="" style={{ width: "514px" }} />
             <div className="sm:w-[40%]">
-                <h1 className="hidden sm:block text-6xl font-semibold">Meinungen</h1>
+                <h1 className="hidden sm:block text-6xl font-semibold text-black">Meinungen</h1>
                 <Test array={data} />
             </div>
         </div >

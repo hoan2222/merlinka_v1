@@ -1,3 +1,5 @@
+const { Html } = require('next/document');
+
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
@@ -17,6 +19,12 @@ module.exports = {
         "animate-height-closed": "0fr",
       },
     },
+    colors: {
+      'black': '#212427',
+      'white': '#ffffff',
+    }
   },
   plugins: [],
 };
+
+
