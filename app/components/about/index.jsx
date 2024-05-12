@@ -5,7 +5,7 @@ export default function About() {
     return (
         <div className="flex flex-col sm:flex-row justify-start space-y-6 px-12 sm:space-y-0 sm:space-x-20 sm:pt-48 pt-36" id="about">
             <h1 className="sm:hidden text-5xl font-semibold">About me</h1>
-            <img src="/PlaceHolder.png" alt="" />
+            <img src="/about.jpg" alt="" className="w-[514px] h-[514px]" />
             <div className="flex flex-col space-y-8 sm:w-[40%]">
                 <h1 className="hidden sm:block text-6xl font-semibold">About me</h1>
                 <p className="text-lg">Hallo ihr Lieben! Ich bin Merle. <br /><br />

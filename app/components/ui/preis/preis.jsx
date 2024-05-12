@@ -6,7 +6,7 @@ export default function Preis({ content, preis, name, image, altImage }) {
     return (
 
         <div className="flex flex-col space-y-4 sm:flex-row justify-between">
-            <img src={image} alt={altImage} className=" sm:hidden" />
+            <img src={image} alt={altImage} className=" sm:hidden w-[480px]" />
             <div className="flex flex-col sm:space-y-4">
                 <div className=" flex flex-row justify-between">
                     <h2 className="sm:hidden text-2xl font-semibold">{name}</h2>
@@ -20,7 +20,7 @@ export default function Preis({ content, preis, name, image, altImage }) {
                 })}</ul>
                 <p className="hidden sm:block text-2xl font-medium">{preis}</p>
             </div>
-            <img src={image} alt={altImage} className="hidden sm:block" />
+            <img src={image} alt={altImage} className="hidden sm:block w-[480px]" />
         </div>
     )
 }
