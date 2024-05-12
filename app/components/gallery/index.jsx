@@ -1,9 +1,10 @@
 'use client'
 
 import React, { useEffect, useState } from 'react'
-import Card from '../components/ui/card'
 import { useMeasure } from '@uidotdev/usehooks'
 import { animate, useMotionValue, motion } from 'framer-motion'
+
+import GalleryCard from '../ui/card/index';
 
 export default function Gallery() {
 
@@ -31,7 +32,9 @@ export default function Gallery() {
     ]
 
     const FAST_DURATION = 90;
-    const SLOW_DURATION = 190;
+    const SLOW_DURATION = 200;
+
+    const size = '60'
 
     const [duration, setDuration] = useState(FAST_DURATION)
 
@@ -71,9 +74,9 @@ export default function Gallery() {
     }, [xTranslation, width, duration, rerender])
 
     return (
-        <main className='py-8  '>
+        <div className={`relative block overflow-hidden w-full ${'h-[' + size + 'vh]'}`}>
             <motion.div
-                className='absolute left-0 flex gap-4'
+                className='left-0 flex gap-4 absolute'
                 ref={ref}
                 style={{ x: xTranslation }}
                 onHoverStart={() => {
@@ -86,9 +89,11 @@ export default function Gallery() {
                 }}
             >
                 {[...content, ...content].map((item, idx) => (
-                    < Card image={item} key={idx} />
+                    <GalleryCard image={item} key={idx} size={size} />
                 ))}
             </motion.div>
-        </main>
+
+        </div>
+
     )
 }
