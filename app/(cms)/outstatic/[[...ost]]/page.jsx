@@ -4,7 +4,8 @@ import { OstClient } from 'outstatic/client'
 import { getDocumentSlugs } from 'outstatic/server'
 
 export async function generateStaticParams() {
-    const posts = getDocumentSlugs('posts')
+    const posts = getDocumentSlugs('')
+    console.log(posts);
     return posts.map((slug) => ({ slug }))
 }
 
