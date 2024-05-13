@@ -1,4 +1,5 @@
 import { OutstaticApi } from 'outstatic'
+import { getDocumentSlugs } from 'outstatic/server'
 
 export const GET = OutstaticApi.GET
 
