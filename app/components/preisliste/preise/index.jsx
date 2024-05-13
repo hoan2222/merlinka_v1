@@ -6,10 +6,10 @@ import Preis from '../../ui/preis/preis';
 
 export default async function Preise() {
     const posts = await getData();
-    return posts.map((post) => {
+    return posts.map((post, idx) => {
         const content = post.content.trim().split("\n\n");
         return (
-            <Preis content={content} name={post.title} preis={post.preis} image={post.coverImage} />
+            <Preis content={content} name={post.title} preis={post.preis} image={post.coverImage} key={idx} />
         )
 
     }
