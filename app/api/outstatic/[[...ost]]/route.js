@@ -2,7 +2,7 @@ import { OutstaticApi } from 'outstatic'
 import { getDocumentSlugs } from 'outstatic/server'
 
 export async function generateStaticParams() {
-    const posts = getDocumentSlugs('content')
+    const posts = getDocumentSlugs('posts')
     return posts.map((slug) => ({ slug }))
 }
 
