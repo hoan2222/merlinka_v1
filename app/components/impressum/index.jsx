@@ -19,7 +19,7 @@ export default function Impressum() {
                     <br />gemäß § 27 a Umsatzsteuergesetz: DE123456789
     </li> */}
                 <li className="pt-5">
-                    Foto "About" by Manuela Clemens
+                    Foto &quot;About&quot; by Manuela Clemens
                 </li>
                 <li className="pt-10">
                     <a href="https://www.instagram.com/merlinka.foto?igsh=ZzE3NTB3Y3VneWZ3">
