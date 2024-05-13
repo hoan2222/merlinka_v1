@@ -1,6 +1,7 @@
 import 'outstatic/outstatic.css'
 import { Outstatic } from 'outstatic'
 import { OstClient } from 'outstatic/client'
+import { getDocumentSlugs } from 'outstatic/server'
 
 export async function generateStaticParams() {
     const posts = getDocumentSlugs('posts')
