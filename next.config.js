@@ -5,6 +5,7 @@ const nextConfig = {
     output: 'export',
 
 
+
     // Optional: Change links `/me` -> `/me/` and emit `/me.html` -> `/me/index.html`
     // trailingSlash: true,
 
@@ -15,4 +16,14 @@ const nextConfig = {
     // distDir: 'dist',
 }
 
-module.exports = nextConfig
+module.exports = {
+    async redirects() {
+        return [
+            {
+                source: '/(cms)/outstatic/[[...ost]]/page',
+                destination: '/',
+                permanent: false,
+            },
+        ]
+    },
+}
