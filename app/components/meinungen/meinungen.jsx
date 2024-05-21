@@ -10,7 +10,7 @@ export default async function TestPage({ data }) {
     const nameArray = [];
 
     function arraybuilder() {
-        data.data.meinungCollection.items.map((item) => {
+        data?.data?.meinungCollection?.items?.map((item) => {
             meinungArray.push(item.inhalt.json.content[0].content[0].value)
             nameArray.push(item.name);
         })
