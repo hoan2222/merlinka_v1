@@ -16,13 +16,18 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <div className="hidden fixed bottom-0 mb-10 w-full sm:flex justify-center">
-        <NavElement />
-      </div>
-      <div className="fixed w-full bottom-0 pb-8 m-0 flex justify-center sm:hidden">
-        <MobileNav />
-      </div>
-      <body className={montserrat.className}>{children}</body>
+
+      <body className={montserrat.className}>
+        <div>
+          {children}
+        </div>
+        <div className="hidden fixed bottom-0 mb-10 w-full sm:flex justify-center">
+          <NavElement />
+        </div>
+        <div className="fixed w-full bottom-0 pb-8 m-0 flex justify-center sm:hidden">
+          <MobileNav />
+        </div>
+      </body>
     </html>
   );
 }

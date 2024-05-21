@@ -2,13 +2,20 @@
 import { useEffect, useState } from "react"
 
 
-
-
-
 export default function Test({ meinungen, namen }) {
 
 
+    return (
+        <div className=" flex flex-col space-y-2">
+            <p className=" font-light text-base leading-4 sm:leading-none sm:text-xl sm:pt-24">
+                {meinungen[0]}
+            </p>
+            <h1 className="font-normal" layout >{namen[0]}</h1>
+        </div>
+    )
+}
 
+/*
     const [index, setIndex] = useState(0);
 
     useEffect(() => {
@@ -20,12 +27,4 @@ export default function Test({ meinungen, namen }) {
         return () => clearInterval(intervall);
     }, [])
 
-    return (
-        <div className=" flex flex-col space-y-2">
-            <p className=" font-light text-base leading-4 sm:leading-none sm:text-xl sm:pt-24">
-                {meinungen[index]}
-            </p>
-            <h1 className="font-normal" layout>{namen[index]}</h1>
-        </div>
-    )
-}
+    */
