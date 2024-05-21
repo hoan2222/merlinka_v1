@@ -7,7 +7,7 @@ import Cross from "../../ui/icons/cross";
 
 export default function MobileNav() {
 
-    let buttonStyle = "w-[85%] bg-black text-white font-medium text-3xl  pb-2 pt-4 grid grid-rows-animate-height-closed"
+    let buttonStyle = "w-[85%] bg-black text-white font-medium text-3xl  pb-3 pt-3 grid grid-rows-animate-height-closed"
 
     const [closed, setOpen] = useState(true);
 
@@ -16,7 +16,7 @@ export default function MobileNav() {
     }
 
     if (!closed) {
-        buttonStyle = "w-[85%] bg-black text-white font-medium text-3xl  pb-2 pt-4 grid grid-rows-animate-height-open";
+        buttonStyle = "w-[85%] bg-black text-white font-medium text-3xl  pb-2 pt-6 grid grid-rows-animate-height-open";
     }
 
     return (
@@ -64,7 +64,7 @@ export default function MobileNav() {
             {closed ? (
                 <motion.div className="flex justify-center" onClick={handleClick} layout>Menü</motion.div>
             ) : (
-                <motion.div className=" fill-neutral-600 flex justify-center" onClick={handleClick} layout><Cross width="40" /></motion.div>
+                <motion.div className=" fill-[#5b5b5b] flex justify-center" onClick={handleClick} layout><Cross width="40" /></motion.div>
             )
             }
 
