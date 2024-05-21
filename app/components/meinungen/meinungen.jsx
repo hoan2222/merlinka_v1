@@ -1,10 +1,27 @@
 
 import Test from "./index"
 
-import fetchGraphQL from "../../../api/fetcher"
 
 
-export default async function TestPage() {
+
+export default async function TestPage({ data }) {
+
+    const meinungArray = [];
+    const nameArray = [];
+
+    function arraybuilder() {
+        data.data.meinungCollection.items.map((item) => {
+            meinungArray.push(item.inhalt.json.content[0].content[0].value)
+            nameArray.push(item.name);
+        })
+        return (
+            meinungArray,
+            nameArray
+        )
+    }
+
+    arraybuilder()
+
     return (
         <div className=" h-[100vh] sm:h-[120vh] flex flex-col sm:flex-row justify-start space-y-6 px-12 sm:space-y-0 sm:space-x-20 pt-48" id="about">
             <h1 className="sm:hidden text-5xl font-semibold">Meinungen</h1>
@@ -21,31 +38,5 @@ export default async function TestPage() {
 
 }
 
-const data = await fetchGraphQL(
-    `query{
-        meinungCollection {
-          items {
-            inhalt {
-              json
-            }
-            name
-          }
-        }
-      }`
-)
 
-const meinungArray = [];
-const nameArray = [];
 
-function arraybuilder() {
-    data.data.meinungCollection.items.map((item) => {
-        meinungArray.push(item.inhalt.json.content[0].content[0].value)
-        nameArray.push(item.name);
-    })
-    return (
-        meinungArray,
-        nameArray
-    )
-}
-
-arraybuilder()

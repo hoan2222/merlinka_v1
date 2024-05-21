@@ -18,7 +18,7 @@ export default function Home() {
         <About />
         <Preisliste item={items} />
         <Contact />
-        <TestPage />
+        <TestPage data={data} />
         <Impressum />
       </div>
     </main>
@@ -41,3 +41,16 @@ const items = await fetchGraphQL(
       }
     }
   }`)
+
+const data = await fetchGraphQL(
+  `query{
+        meinungCollection {
+          items {
+            inhalt {
+              json
+            }
+            name
+          }
+        }
+      }`
+)
