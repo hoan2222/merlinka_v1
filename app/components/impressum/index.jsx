@@ -23,7 +23,7 @@ export default function Impressum() {
                 </li>
                 <li className="pt-10">
                     <a href="https://www.instagram.com/merlinka.foto?igsh=ZzE3NTB3Y3VneWZ3">
-                        <motion.img src="/Instagram_Glyph_Black.svg" alt="Hier gehts zu Instagram" width={30}
+                        <motion.img src="/merlinka_v1/Instagram_Glyph_Black.svg" alt="Hier gehts zu Instagram" width={30}
                             whileHover={{
                                 scale: 1.2,
                                 transition: {

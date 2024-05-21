@@ -9,20 +9,20 @@ import { animate, useMotionValue, motion } from 'framer-motion'
 export default function Gallery() {
 
     const data = [
-        "/gallery/IMG_0011.jpg",
-        "/gallery/IMG_0079.jpg",
-        "/gallery/IMG_0174-2-2.jpg",
-        "/gallery/IMG_0288.jpg",
-        "/gallery/IMG_0321.jpg",
-        "/gallery/IMG_0564.jpg",
-        "/gallery/IMG_2367.jpg",
-        "/gallery/IMG_3605.jpg",
-        "/gallery/IMG_6620.jpg",
-        "/gallery/IMG_6949.jpg",
-        "/gallery/IMG_7566.jpg",
-        "/gallery/IMG_8480.jpg",
-        "/gallery/IMG_8899.jpg",
-        "/gallery/IMG_9940.jpg",
+        "/merlinka_v1/gallery/IMG_0011.jpg",
+        "/merlinka_v1/gallery/IMG_0079.jpg",
+        "/merlinka_v1/gallery/IMG_0174-2-2.jpg",
+        "/merlinka_v1/gallery/IMG_0288.jpg",
+        "/merlinka_v1/gallery/IMG_0321.jpg",
+        "/merlinka_v1/gallery/IMG_0564.jpg",
+        "/merlinka_v1/gallery/IMG_2367.jpg",
+        "/merlinka_v1/gallery/IMG_3605.jpg",
+        "/merlinka_v1/gallery/IMG_6620.jpg",
+        "/merlinka_v1/gallery/IMG_6949.jpg",
+        "/merlinka_v1/gallery/IMG_7566.jpg",
+        "/merlinka_v1/gallery/IMG_8480.jpg",
+        "/merlinka_v1/gallery/IMG_8899.jpg",
+        "/merlinka_v1/gallery/IMG_9940.jpg",
     ]
 
     const datas = [...data, ...data];
