@@ -5,7 +5,7 @@ export default function Admin() {
     return (
         <div className=" flex justify-center pt-20 ">
             <div className="flex flex-col space-y-20">
-                <h1 className=" text-5xl font-bold">Merle bist du's ?</h1>
+                <h1 className=" text-5xl font-bold">Merle bist du&apos;s ?</h1>
                 <a href="/">
                     <div className=" flex justify-center rounded-full border border-black py-8">
                         <p className=" hover:font-semibold">Ne, leider nicht...</p>
