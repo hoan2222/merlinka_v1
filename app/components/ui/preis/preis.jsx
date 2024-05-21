@@ -9,10 +9,10 @@ export default function Preis({ content, preis, name, image, altImage }) {
             <img src={image} alt={altImage} className=" sm:hidden w-[480px]" />
             <div className="flex flex-col sm:space-y-4">
                 <div className=" flex flex-row justify-between">
-                    <h2 className="sm:hidden text-2xl font-semibold">{name}</h2>
+                    <h2 className="uppercase sm:hidden text-2xl font-semibold">{name}</h2>
                     <p className="sm:hidden text-lg font-medium text-end">{preis}</p>
                 </div>
-                <h2 className="hidden sm:block text-2xl font-semibold">{name}</h2>
+                <h2 className="uppercase hidden sm:block text-2xl font-semibold">{name}</h2>
                 <ul>{content?.map((data, index) => {
                     return (
                         <li key={index} className=" uppercase text-base leading-4 sm:text-xl">{data}</li>

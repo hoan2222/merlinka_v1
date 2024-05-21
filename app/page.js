@@ -6,6 +6,7 @@ import Impressum from "./components/impressum";
 import TestPage from "./components/meinungen/meinungen.jsx"
 import Gallery from "./components/gallery";
 
+import fetchGraphQL from "../api/fetcher"
 
 export default function Home() {
 
@@ -15,7 +16,7 @@ export default function Home() {
       <div className="flex flex-col pb-48 justify-start w-full">
         <Gallery />
         <About />
-        <Preisliste />
+        <Preisliste item={items} />
         <Contact />
         <TestPage />
         <Impressum />
@@ -23,3 +24,20 @@ export default function Home() {
     </main>
   );
 }
+
+
+const items = await fetchGraphQL(
+  `query{
+    paketeCollection{
+      items{
+        title
+        leistungen{
+          json
+        }
+        preis
+        thumbnail{
+          url
+        }
+      }
+    }
+  }`)

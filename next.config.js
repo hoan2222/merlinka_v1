@@ -2,7 +2,7 @@
  * @type {import('next').NextConfig}
  */
 const nextConfig = {
-    output: 'export',
+    //output: 'export',
 
 
 
@@ -16,14 +16,3 @@ const nextConfig = {
     // distDir: 'dist',
 }
 
-module.exports = {
-    async redirects() {
-        return [
-            {
-                source: '/(cms)/outstatic/[[...ost]]/page',
-                destination: '/',
-                permanent: false,
-            },
-        ]
-    },
-}
