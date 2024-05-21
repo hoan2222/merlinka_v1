@@ -75,23 +75,3 @@ export default function MobileNav() {
 }
 
 
-/*
-<motion.ul className={closed ? 'hidden' : 'text-center space-y-5 pb-4'}
-                variants={{
-                    open: {
-                        opacity: 1,
-                        transition: {
-                            type: "spring"
-                        }
-                    },
-                    closed: {
-                        opacity: 0,
-                    }
-                }}
-            >
-                <li><a href="/">Contact</a></li>
-                <li><a href="/">Preise</a></li>
-                <li><a href="/">About</a></li>
-                <li><a href="/">Home</a></li>
-            </motion.ul>
-*/
