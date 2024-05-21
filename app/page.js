@@ -8,8 +8,35 @@ import Gallery from "./components/gallery";
 
 import fetchGraphQL from "../api/fetcher"
 
-export default function Home() {
+export default async function Home() {
+  const items = await fetchGraphQL(
+    `query{
+      paketeCollection{
+        items{
+          title
+          leistungen{
+            json
+          }
+          preis
+          thumbnail{
+            url
+          }
+        }
+      }
+    }`)
 
+  const data = await fetchGraphQL(
+    `query{
+          meinungCollection {
+            items {
+              inhalt {
+                json
+              }
+              name
+            }
+          }
+        }`
+  )
   return (
     <main>
       <Head />
@@ -26,31 +53,3 @@ export default function Home() {
 }
 
 
-const items = await fetchGraphQL(
-  `query{
-    paketeCollection{
-      items{
-        title
-        leistungen{
-          json
-        }
-        preis
-        thumbnail{
-          url
-        }
-      }
-    }
-  }`)
-
-const data = await fetchGraphQL(
-  `query{
-        meinungCollection {
-          items {
-            inhalt {
-              json
-            }
-            name
-          }
-        }
-      }`
-)
