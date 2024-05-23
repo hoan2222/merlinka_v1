@@ -8,4 +8,4 @@ export default function Head() {
             <img src="/merlinka_v1/Merlinka_LOGO_v1.2.svg" alt="Merlinka Fotografie" />
         </div>
     )
-} 
+}  
