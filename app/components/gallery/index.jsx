@@ -9,26 +9,27 @@ import { animate, useMotionValue, motion } from 'framer-motion'
 export default function Gallery() {
 
     const data = [
-        "/merlinka_v1/gallery/IMG_0011.webp",
-        "/merlinka_v1/gallery/IMG_0079.webp",
-        "/merlinka_v1/gallery/IMG_0174-2-2.webp",
-        "/merlinka_v1/gallery/IMG_0288.webp",
-        "/merlinka_v1/gallery/IMG_0321.webp",
-        "/merlinka_v1/gallery/IMG_0564.webp",
-        "/merlinka_v1/gallery/IMG_2367.webp",
-        "/merlinka_v1/gallery/IMG_3605.webp",
-        "/merlinka_v1/gallery/IMG_6620.webp",
-        "/merlinka_v1/gallery/IMG_6949.webp",
-        "/merlinka_v1/gallery/IMG_7566.webp",
-        "/merlinka_v1/gallery/IMG_8480.webp",
-        "/merlinka_v1/gallery/IMG_8899.webp",
-        "/merlinka_v1/gallery/IMG_9940.webp",
+        "/merlinka_v1/gallery/IMG_0011.jpg",
+        "/merlinka_v1/gallery/IMG_0079.jpg",
+        "/merlinka_v1/gallery/IMG_0174-2-2.jpg",
+        "/merlinka_v1/gallery/IMG_0288.jpg",
+        "/merlinka_v1/gallery/IMG_0321.jpg",
+        "/merlinka_v1/gallery/IMG_0564.jpg",
+        "/merlinka_v1/gallery/IMG_2367.jpg",
+        "/merlinka_v1/gallery/IMG_3605.jpg",
+        "/merlinka_v1/gallery/IMG_6620.jpg",
+        "/merlinka_v1/gallery/IMG_6949.jpg",
+        "/merlinka_v1/gallery/IMG_7566.jpg",
+        "/merlinka_v1/gallery/IMG_8480.jpg",
+        "/merlinka_v1/gallery/IMG_8899.jpg",
+        "/merlinka_v1/gallery/IMG_9940.jpg",
     ]
 
     const datas = [...data, ...data];
 
     const FAST_DURATION = 90;
     const SLOW_DURATION = 200;
+
 
 
     const [duration, setDuration] = useState(FAST_DURATION)
