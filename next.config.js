@@ -3,7 +3,7 @@
  */
 const nextConfig = {
   basePath: '/merlinka_v1',
-  //output: 'export',
+  output: 'export',
 };
 
 module.exports = nextConfig;
