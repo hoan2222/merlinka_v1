@@ -14,6 +14,7 @@ export default async function Home() {
       paketeCollection{
         items{
           title
+          id
           leistungen{
             json
           }
@@ -21,13 +22,13 @@ export default async function Home() {
           thumbnail{
             url
           }
-          id
+          
         }
       }
     }`,
   );
 
-  const pakete = items?.data?.paketeCollection?.items?.sort(
+  let pakete = await items?.data?.paketeCollection?.items?.sort(
     (a, b) => a.id - b.id,
   );
 
